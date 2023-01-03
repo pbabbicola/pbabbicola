@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-<a rel="me" href="https://hachyderm.io/@paula">Mastodon</a>
+<a rel="me" href="https://hachyderm.io/@paula">Mastodon account</a>
 
 <!--
 **pbabbicola/pbabbicola** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
