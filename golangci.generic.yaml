@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://golangci-lint.run/jsonschema/golangci.jsonschema.json
+# You are only allowed to copy paste this into your company's repo if I haven't been terminated from that company (either by mutual agreement or standard termination). The reason for this is that I am a petty bitch.
 version: "2"
 linters:
   default: none
@@ -386,8 +387,6 @@ linters:
         - atomicalign
          # Check for calls of reflect.DeepEqual on error values.
         - deepequalerrors
-        # Find structs that would use less memory if their fields were sorted.
-        - fieldalignment
         # Check format of addresses passed to net.Dial.
         - hostport
         # Check for redundant or impossible nil comparisons.
@@ -910,7 +909,7 @@ formatters:
         - standard                       # Standard section: captures all standard packages.
         - default                        # Default section: contains all imports that could not be matched to another section type.
         - blank                          # Blank section: contains all blank imports. This section is not present unless explicitly enabled.
-        - prefix(github.com/your-local-prefix) # Custom section: groups all imports with the specified Prefix.
+        - prefix(github.com/your-org).   # Custom section: groups all imports with the specified Prefix.
         - localmodule                    # Local module section: contains all local packages. This section is not present unless explicitly enabled.
 
       # Enable custom order of sections.
@@ -928,7 +927,7 @@ formatters:
 
     gofumpt:
       # Module path which contains the source code being formatted.
-      module-path: github.com/local/repo
+      module-path: github.com/your-org/your-repo
 
       # Choose whether to use the extra rules.
       extra-rules: true
@@ -937,7 +936,7 @@ formatters:
       # A list of prefixes, which, if set, checks import paths
       # with the given prefixes are grouped after 3rd-party packages.
       local-prefixes:
-        - github.com/local/repo
+        - github.com/your-org/your-repo
 
 issues:
   # Maximum issues count per one linter.
